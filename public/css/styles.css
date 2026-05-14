@@ -1,0 +1,189 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.border-light-custom {
+    border-color: #d9d9d9 !important;
+}
+
+.border-dark-custom {
+    border-color: #d0d0d0 !important;
+    opacity: 1 !important;
+}
+
+/* Ảnh lớn */
+.product-image-box {
+    background: #fff;
+}
+
+.product-main-img {
+    width: 100%;
+    aspect-ratio: 1 / 1.3;
+    object-fit: contain;
+    background: #fff;
+    display: block;
+}
+
+/* Ảnh nhỏ */
+.thumb-row {
+    margin-top: 4px;
+}
+
+.thumb-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #fff;
+    display: block;
+}
+
+/* Text sản phẩm */
+.product-title {
+    font-size: 34px;
+    line-height: 1.15;
+}
+
+.product-price {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.product-desc,
+.product-meta {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+/* Icon menu mobile */
+.mobile-menu-icon {
+    font-size: 42px;
+    color: #444;
+    line-height: 1;
+}
+
+/* Button thường */
+.add-cart-btn {
+    padding: 8px 22px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/* Button ảnh PNG */
+.btn-img {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-img img {
+    height: 55px;
+    display: block;
+    transition: all 0.15s ease;
+}
+
+.btn-img:hover img {
+    filter: brightness(1.08);
+}
+
+.btn-img:active img {
+    transform: scale(0.95);
+    filter: brightness(0.92);
+}
+
+/* Footer */
+.footer-col {
+    margin-bottom: 0;
+}
+
+/* MOBILE */
+@media (max-width: 991.98px) {
+    .product-image-box {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .thumb-row {
+        max-width: 220px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .product-main-img {
+        max-height: 300px;
+    }
+
+    .thumb-img {
+        max-height: 65px;
+    }
+
+    .product-title {
+        font-size: 20px !important;
+        line-height: 1.1;
+    }
+
+    .product-price {
+        font-size: 20px !important;
+        line-height: 1.2;
+    }
+
+    .product-desc,
+    .product-meta {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .add-cart-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .btn-img img {
+        height: 28px;
+    }
+
+    .footer-col {
+        margin-bottom: 2rem;
+    }
+}
+
+/* cac nut lien ket */
+/* mặc định */
+.nav-vip {
+    position: relative;
+    color: #333 !important;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+/* hover */
+.nav-vip:hover {
+    color: #000 !important;
+}
+
+/* active page */
+.nav-vip.active {
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+/* 🔥 ICON CHỈ HIỆN KHI ACTIVE */
+.nav-vip.active::before {
+    content: "\F5A1"; /* icon fire của bootstrap */
+    font-family: "Bootstrap-icons";
+    margin-right: 6px;
+    color: #0d6efd;
+    display: inline-block;
+}
+
+/* hover nhẹ cho active */
+.nav-vip.active:hover::before {
+    color: red;
+    text-shadow:
+        0 0 5px orange,
+        0 0 10px red,
+        0 0 20px orange;
+}
